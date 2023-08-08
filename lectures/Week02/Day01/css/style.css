@@ -1,0 +1,40 @@
+* {
+    border: #ff0000 solid 1px;
+}
+h2 {
+    color: #e841e8;
+}
+.h2One {
+    color: #e841e8
+}
+.h2Two {
+    color: orange !important;
+}
+body {
+    background-color: #ffe4c4;
+    color: #2fd0de;
+}
+nav {
+    margin: 2em;
+}
+a {
+    color: #e841e8;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 1em;
+}
+.over {
+    text-decoration: overline;
+    border: 5px double yellowgreen;
+    padding: 1em;
+}
+#span {
+    font-size: 4em;
+    color: orange;
+    border: 15px groove yellowgreen;
+}
+img {
+    width: 200px;
+    /* height: 600px; */
+    border-radius: 50%;
+}
