@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/style.css'>
+    <title>CSS and JS</title>
+    <!-- Rules -->
+    <!-- Add CSS to the page to make it pleasing to look at, be sure to check for any elemnts with requirements -->
+    <!-- All divs with a class of row should show it's children in a row evenly across the whole page -->
+    <!-- Add id's or classes where needed to accomplish tasks as well as any other html tags that may be needed -->
+</head>
+<body>
+    <h1>CSS and JS</h1>
+    <!-- #1 Change the color of the text using CSS and change the size of the text using JS.  Using CSS or JS change the size of the words non corporis to something different from the button or its defaults -->
+    <div>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in iste, non corporis recusandae accusantium voluptas ex accusamus tempora culpa autem quaerat id ut aspernatur illo quasi iure, nemo alias.</h4>
+        <input type="button" onclick="changeMe()" value="Change Me">
+    </div>
+    <div class="row">
+        <div>
+            <!-- #2 This div needs to have an image added to it.  Use JS to add the image -->
+            <div></div>
+            <input type="button" onclick="addImg()" value="Add Image">
+        </div>
+        <div>
+            <!-- #3 Using CSS and JS these images should be spaced evening in a row across the page after clicking the button.  Before clicking they should be hidden -->
+            <div id="hidden">
+                <img src="./images/IMG_1794.jpg" alt="image01">
+                <img src="./images/IMG_1860.jpg" alt="image02">
+                <img src="./images/IMG_1862.jpg" alt="image03">
+                <img src="./images/IMG_1863.jpg" alt="image04">
+                <img src="./images/IMG_1869.jpg" alt="image05">
+                <img src="./images/IMG_1872.jpg" alt="image06">
+            </div>
+            <input type="button" onclick="showImg()" value="Show Images">
+        </div>
+    </div>
+    <div>
+        <!-- #4 Print the following to an alert: Baby Fish are cute! -->
+        <input type='button' onclick='stringAlert()' value='String Alert Button'>
+        <input type='button' onclick='stringPara()' value='String Paragraph'>
+        <p id="stringPara"></p>
+        <button onclick="updateMe(this)">Update Me</button>
+    </div>
+    <div class="row">
+        <div>
+            <h4>Lets print a string to span tag using a form</h4>
+            <span id="stringSpan"></span>
+            <form name="">
+                <input type="text" name="">
+                <input type='button' onclick='stringSpan()' value='String Span Button'>
+            </form>
+        </div>
+        <div>
+            <h4>Lets print a number to an span tag</h4>
+            <span id="numbers"></span>
+            <input type='button' onclick="numberAlert()" value='Number Button'>
+            <input type='button' onclick='numberAlertString()' value='Button w/number and String'>
+        </div>
+    </div>
+    <div>
+        <h4>Increase the like number</h4>
+        <h4>Like Me <span id="like">0</span></h4>
+        <input type='button' onclick='likeMe()' value='Increase Likes'>
+    </div>
+    <div>
+        <h4>Print an array to an span</h4>
+        <span id="array"></span>
+        <input type='button' onclick='array01Alert()' value='String Array'>
+    </div>
+    <div>
+        <h4>Lets add 2+4 in a function</h4>
+        <span id="add"></span>
+        <input type='button' onclick='adding(2,4)' value='Add 2+4'>
+        <h4>Lets use a form to add numbers</h4>
+        <form name="form01">
+            <input type="number" name="num01" id="num01">
+            <input type="number" name="num02" id="num02">
+            <input type='button' onclick='adding02()' value='Adding form numbers'>
+        </form>
+    </div>
+    <div>
+        <h4>If statement/ for loop</h4>
+        <input type='button' onclick='ifLoop()' value='If Loop Function'>
+        <input type='button' onclick='ifLoop2()' value='If Loop Function 2'>
+        <input type='button' onclick='ifLoop3()' value='If Loop Function 3'>
+    </div>
+    <script src='./js/script.js'></script>
+</body>
+</html>
