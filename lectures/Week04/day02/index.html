@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>All About Fish</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#" onclick="contact()">Contact</a>
+            <a href="#">FAQs</a>
+        </nav>
+        <h1>All about Fish</h1>
+    </header>
+    <main>
+        <!-- Left Column -->
+        <div class="column mainColumn">
+            <!-- Top Left Box -->
+            <div class="column topLeft">
+                <h2>Fish Frenzy</h2>
+                <!-- Bottom of Top Box 3 images -->
+                <div class="row">
+                    <img src="./images/IMG_1879.jpg" alt="Fishy" class="round">
+                    <img src="./images/IMG_1860.jpg" alt="Fishy" class="round">
+                    <img src="./images/IMG_1862.jpg" alt="Fishy" class="round">
+                </div>
+            </div>
+            <!-- Bottom Left Box -->
+            <div class="column bottomLeft">
+                <h2>Follow Us</h2>
+                <div class="column bottomBottom">
+                    <div class="row">
+                        <h3>Bob <span onclick="follow(this)">0</span></h3>
+                        <button onclick="change(this)" class="off">Off</button>
+                    </div>
+                    <div class="row">
+                        <h3>Jane <span onclick="follow(this)">1</span></h3>
+                        <button onclick="change(this)" class="on">On</button>
+                    </div>
+                    <div class="row">
+                        <h3>John <span onclick="follow(this)">5</span></h3>
+                        <button onclick="change(this)" class="on">On</button>
+                    </div>
+                    <div class="row">
+                        <h3>Kevin <span onclick="follow(this)">10</span></h3>
+                        <button onclick="change(this)" class="off">Off</button>
+                    </div>
+                    <div class="row">
+                        <h3>Katie <span onclick="follow(this)">20</span></h3>
+                        <button onclick="change(this)" class="on">On</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column mainColumn">
+            <!-- Top Right Box -->
+            <div class="column topRight">
+                <h2 id="babyAdult">Greeting Young One</h2>
+                <img onclick="imgSwap('baby')" src="./images/IMG_1869.jpg" alt="Fishy" id="baby">
+                <img onclick="imgSwap('adult')" src="./images/IMG_1794.jpg" alt="Fishy" id="adult">
+            </div>
+            <!-- Bottom Right Box -->
+            <div class="column bottomRight">
+                <h2>Hello World</h2>
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quibusdam eligendi inventore incidunt sed, perferendis ipsam? Aspernatur, odit laudantium, possimus consequuntur sequi molestiae voluptates quisquam repellat vero fuga quae!</p>
+                    <img src="./images/IMG_1882.jpg" alt="Fishy" class="profImg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
