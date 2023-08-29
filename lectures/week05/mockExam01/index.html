@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Billy's Hero Shop!</h1>
+        <div class="row">
+            <nav>
+                <a href="#">Home</a> | 
+                <a href="#">Products</a> | 
+                <a href="#">Company</a> | 
+                <a href="#">Blog</a> | 
+            </nav>
+            <div class="row">
+                <img src="./images/shopping-cart-icon.jpg" alt="Cart">
+                <span id="cart">0</span>
+                <form name="search">
+                    <input type="search" name="theSearch" placeholder="search" id="">
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="column left">
+            <h2>Featured Product</h2>
+            <img src="./images/golden_sword_of_battle.jpg" alt="featured" id="one">
+            <div class="column">
+                <h3>Golden Sword Of Battle! (AKA "Scarlet")</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident sapiente dolore assumenda aspernatur at odit in ea quibusdam magni obcaecati expedita dicta voluptatum distinctio, eveniet necessitatibus similique molestiae? Expedita!</p>
+                <button onclick="addCart()">Add To Cart</button>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Other Heroic Products:</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="./images/root_sword.jpg" alt="root">
+                    <h4>Root Sword</h4>
+                    <button onclick="addCart()">Add To Cart</button>
+                </div>
+                <div class="column">
+                    <img src="./images/demon_blood_sword.jpg" alt="demon">
+                    <h4>Demon Blood Sword</h4>
+                    <button onclick="addCart()">Add To Cart</button>
+                </div>
+                <div class="column">
+                    <img src="./images/finn_sword.jpg" alt="finn">
+                    <h4>Finn Sword</h4>
+                    <button onclick="addCart()">Add To Cart</button>
+                </div>
+                <div class="column">
+                    <img src="./images/grass_sword.jpg" alt="grass">
+                    <h4>Grass Sword</h4>
+                    <button onclick="addCart()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &#169; Bill The Hero 2022</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
