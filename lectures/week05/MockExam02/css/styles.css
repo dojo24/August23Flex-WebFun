@@ -1,0 +1,63 @@
+/* * {
+    border: purple 1px dotted;
+} */
+body {
+    width: 95%;
+}
+header, footer {
+    background-color: blue;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer {
+    color: white
+}
+header {
+    justify-content: space-between;
+}
+header .row {
+    width: 30%;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 .5em;
+}
+a {
+    color: white
+}
+main {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start {
+    align-self: flex-start;
+}

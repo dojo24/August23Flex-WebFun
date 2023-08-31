@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Billy's Blog!</h1>
+        <div class="row">
+            <nav>
+                <a href="#">Home</a> | 
+                <a href="#">Products</a> | 
+                <a href="#">Company</a> | 
+                <a href="#">Blog</a>
+            </nav>
+            <button onclick="changeText(this)">Subscribe to Newsletter</button>
+        </div>
+    </header>
+    <main>
+        <div class="column">
+            <h2>On the topic of "heros"</h2>
+            <h3>Some thoughts on heroism by a retired hero | Billy</h3>
+        </div>
+        <div class="column">
+            <h3 class="start">Point One</h3>
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore voluptas vero ipsam nulla pariatur quibusdam est in fugit enim, autem esse unde explicabo totam vitae consequuntur, nam ut inventore.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi placeat, iure unde ad delectus repellat dolorum sint beatae veniam reiciendis mollitia in iste possimus hic laudantium harum nesciunt odio perferendis.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h3 class="start">Point Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eligendi harum rem, libero, veritatis accusantium dolorum quas exercitatistartm dolore veniam saepe quo, ut quia voluptas voluptatum rerum distinctio eius suscipit.</p>
+                <ul class="start">
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Ready to take a Hero Class?</h3>
+                <form action="" id="joinHero">
+                    <div class="row">
+                        <input type="text" name="firstName" placeholder="First Name">
+                        <input type="text" name="lastName" placeholder="Last Name">
+                    </div>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="button" name="submit" value="Join Hero Class">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2 class="start">About the Author</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus facilis quasi culpa quo ullam eaque, beatae, deserunt odio fugiat explicabo voluptatum temporibus vitae atque, ex odit suscipit id. Quia, deserunt?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta illum minima velit doloribus. Numquam natus aperiam quae ea non, quisquam maiores libero nulla deleniti harum odio ut explicabo reiciendis debitis?</p>
+            </div>
+            <img src="./images/yuGiOhHeror.jpg" alt="" id="imgChange" onmouseover="changeMe(this)" onmouseout="changeMeBack(this)">
+        </div>
+    </main>
+    <footer>
+        <h3>Copyright @ Billy the Hero 2022</h3>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
