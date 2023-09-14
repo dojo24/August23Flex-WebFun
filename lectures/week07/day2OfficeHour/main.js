@@ -62,3 +62,5 @@ console.log(newArray)
 
 array01.sort()
 console.log(array01)
+
+console.log("leaving a message during lecture")
