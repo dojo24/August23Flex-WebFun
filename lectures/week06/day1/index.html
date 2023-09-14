@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/styles.css'>
+    <title>CSS and JS</title>
+</head>
+<body>
+    <h1>CSS and JS</h1>
+    <div>
+        <div>
+            <h4 id="h4Style">Using JS Change my text color and size</h4>
+            <input type="button" onclick="colorChange()" value="Change Me">
+        </div>
+        <div>
+            <h4>Add an image to my Div using JS</h4>
+            <div id="addImg"></div>
+            <input type="button" onclick="addImg()" value="Add Image">
+        </div>
+    </div>
+    <div>
+        <h4>Using JS show the hidden images and display them in a flex row spaced evenly</h4>
+        <div id="hidden">
+            <img src="./images/DSCN1100.JPG" alt="image01">
+            <img src="./images/DSCN1102.JPG" alt="image02">
+            <img src="./images/DSCN1146.JPG" alt="image03">
+            <img src="./images/DSCN1147.JPG" alt="image04">
+            <img src="./images/DSCN1154.JPG" alt="image05">
+            <img src="./images/DSCN1159.JPG" alt="image06">
+        </div>
+        <input type="button" onclick="showImg()" value="Show Images">
+    </div>
+    <div class="box">
+        <h2>The Results</h2>
+        <section id="results"></section>
+    </div>
+    <div>
+        <h4>Find my average [78,90,45,67,90,12,56,78,45,99]</h4>
+        <input type="button" onclick="findAvg()" value="Print Average">
+    </div>
+    <div>
+        <h4>Am I less than 10?</h4>
+        <p>Write a function to check if the input is less than 10 and prints true if it is in the results box and false if not</p>
+        <form name="ifLessThan">
+            <input type="number" name="lessthan">
+            <input type="button" value="Submit Value" onclick="ifLessThan10()">
+        </form>
+    </div>
+    <div>
+        <h4>Change the h3 below to a h6</h4>
+        <h3 id="headerTag">I should have been an h6 tag</h3>
+        <input type="button" value="Change h3 to h6" onclick="changeTag()">
+    </div>
+    <script src='./js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/styles.css'>
+    <title>JS</title>
+</head>
+<body>
+    <h1>JS</h1>
+    <div class="box">
+        <h2>The Results</h2>
+        <section id="results"></section>
+    </div>
+    <div>
+        <h4>Lets print a string to an alert button</h4>
+        <input type='button' onclick='stringAlert()' value='String Alert Button'>
+    </div>
+    <div>
+        <h4>Increase the like number</h4>
+        <h4>Like Me <span id="like">45</span></h4>
+        <input type='button' onclick='likeMe()' value='Increase Likes'>
+    </div>
+    <div>
+        <h4>Lets print a string to the results div using a form</h4>
+        <form name="theString">
+            <input type="text" name="string">
+            <input type='button' onclick='stringSpan()' value='String Button'>
+        </form>
+    </div>
+    <div>
+        <div>
+            <h4>Print an array to the results</h4>
+            <input type='button' onclick='array01Alert()' value='String Array'>
+        </div>
+        <div>
+            <h4>Lets add 2+4 in a function and show the result in the results box</h4>
+            <input type='button' onclick='adding(2,4)' value='Add 2+4'>
+            <h4>Lets use a form to add numbers</h4>
+            <form name="form01">
+                <input type="number" name="num01" id="num01">
+                <input type="number" name="num02" id="num02">
+                <input type='button' onclick='adding02()' value='Adding form numbers'>
+            </form>
+        </div>
+    </div>
+    <!-- <button onclick="adding(4,6)"></button> -->
+    <script src='./js/script.js'></script>
+</body>
+</html>
