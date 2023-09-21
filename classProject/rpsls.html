@@ -17,35 +17,29 @@
     <main>
         <!-- Players choose their option -->
         <div class="row player">
-            <form name="player01">
-                <label for=""></label>
-                <select name="" id="">
-                    <option value="">Chose and Option</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <input type="button" value="Player 1 Submit Choice">
-            </form>
-            <form name="player02">
-                <label for=""></label>
-                <select name="" id="">
-                    <option value="">Chose and Option</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <input type="button" value="Player 2 Submit Choice">
-            </form>
+            <div class="playerButtons">
+                <button onclick="p1('Rock')"><img src="./images/rock.png" alt=""></button>
+                <button onclick="p1('Paper')"><img src="./images/paper.png" alt=""></button>
+                <button onclick="p1('Scissors')"><img src="./images/scissors.png" alt=""></button>
+                <button onclick="p1('Lizard')"><img src="./images/lizard.png" alt=""></button>
+                <button onclick="p1('Spock')"><img src="./images/spock.png" alt=""></button>
+            </div>
+            <div class="playerButtons">
+                <button onclick="p2('Rock')"><img src="./images/rock.png" alt=""></button>
+                <button onclick="p2('Paper')"><img src="./images/paper.png" alt=""></button>
+                <button onclick="p2('Scissors')"><img src="./images/scissors.png" alt=""></button>
+                <button onclick="p2('Lizard')"><img src="./images/lizard.png" alt=""></button>
+                <button onclick="p2('Spock')"><img src="./images/spock.png" alt=""></button>
+            </div>
         </div>
+        <button onclick="check()">Duel</button>
         <!-- Display the players choices as well as the final result -->
         <div class="row displayChoice">
-
-            <div class="result">
+            <div class="row">
+                <div id="p1Choice"></div>
+                <div id="p2Choice"></div>
+            </div>
+            <div class="result" id="result">
 
             </div>
         </div>

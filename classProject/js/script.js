@@ -64,3 +64,140 @@ function updateMadLib() {
     console.log(a,b,c,d,e)
 }
 updateMadLib()
+
+
+// Rock Paper Scissor Lizard Spock Logic
+
+var p1Choice = ''
+var p2Choice = ''
+function p1(choice) {
+    p1Choice = choice
+    console.log(p1Choice)
+    return p1Choice
+}
+function p2(choice) {
+    p2Choice = choice
+    console.log(p2Choice)
+    return p2Choice
+}
+
+
+var one = "Player 1 won"
+var two = "Player 2 won"
+
+// Rock Crushes Scissors
+// Scissors Decapitates Lizard
+// Lizard Eats Paper
+// Paper Disproves Spock
+// Spock Vaporizes Rock
+// Scissors Cuts Paper
+// Paper Covers Rock
+// Rock Crushes Lizard
+// Lizard Poisons Spock
+// Spock Smashes Scissors
+function check() {
+    var one = "Player 1 won"
+    var two = "Player 2 won"
+    if(p1Choice == p2Choice) {
+        console.log('A tie')
+        text = `<h2>You both chose ${p1Choice} so it ends in a tie</h2>`
+    }
+    else if(p1Choice == 'Rock') {
+        if(p2Choice == 'Scissors') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Lizard') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Spock') {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        } else {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        }
+    }
+    else if(p1Choice == 'Scissors') {
+        if(p2Choice == 'Lizard') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Paper') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Rock') {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        } else {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        }
+    }
+    else if(p1Choice == 'Lizard') {
+        if(p2Choice == 'Paper') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Spock') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Scissors') {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        } else {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        }
+    }
+    else if(p1Choice == 'Paper') {
+        if(p2Choice == 'Spock') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Rock') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Lizard') {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        } else {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        }
+    }
+    else if(p1Choice == 'Spock') {
+        if(p2Choice == 'Rock') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Scissors') {
+            console.log(one)
+            text = `<h2>${one}</h2>`
+        }
+        else if(p2Choice == 'Paper') {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        } else {
+            console.log(two)
+            text = `<h2>${two}</h2>`
+        }
+    }
+    var newp1 = p1Choice.toLowerCase()
+    var newp2 = p2Choice.toLowerCase()
+    var p1Img = `<img src="./images/${newp1}.png" alt="${newp1}">`
+    var p2Img = `<img src="./images/${newp2}.png" alt="${newp2}">`
+    var finalp1Img = document.getElementById('p1Choice')
+    var finalp2Img = document.getElementById('p2Choice')
+    finalp1Img.innerHTML = p1Img
+    finalp2Img.innerHTML = p2Img
+    setTimeout(function() {
+        var final = document.getElementById('result')
+        final.innerHTML = text
+    }, 2000)
+}
+
